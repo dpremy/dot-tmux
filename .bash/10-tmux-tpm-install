@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 if hash "tmux" 2>/dev/null; then
   if [ ! -d ~/.tmux/plugins/tpm ]; then
     mkdir -p /.tmux/plugins/ > /dev/null 2>&1
