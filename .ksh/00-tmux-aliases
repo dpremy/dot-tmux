@@ -1,4 +1,4 @@
-#!/usr/bin/env zsh
+#!/usr/bin/env ksh
 
 if (`which tmux >/dev/null 2>&1`); then
   alias tmux-update-plugins='~/.tmux/plugins/tpm/bin/update_plugins all'
