@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# check for tmux being installed, if it is, try to reattach to existing session>
+# check for tmux being installed, if it is, try to reattach to existing sessions
 if command -v tmux > /dev/null 2>&1; then
     # if no session is started, start a new session
     test -z "${TMUX}" && (tmux attach || tmux new-session)

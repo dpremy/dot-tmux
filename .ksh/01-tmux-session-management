@@ -1,6 +1,6 @@
 #!/usr/bin/env ksh
 
-# check for tmux being installed, if it is, try to reattach to existing session>
+# check for tmux being installed, if it is, try to reattach to existing sessions
 if [ "$(whence -p tmux)" ]; then
     # if no session is started, start a new session
     test -z "${TMUX}" && (tmux attach || tmux new-session)
