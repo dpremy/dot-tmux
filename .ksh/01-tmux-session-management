@@ -1,12 +1,11 @@
 #!/usr/bin/env ksh
 
-# check for tmux being installed, if it is, try to reattach to existing sessions
+# verify tmux is available
 if [ "$(whence -p tmux)" ]; then
-    # if no session is started, start a new session
-    test -z "${TMUX}" && (tmux attach || tmux new-session)
-
-    # when quitting tmux, try to attach
-    while test -z "${TMUX}"; do
-        tmux attach || break
-    done
+  # verify we are not nesting tmux
+  if test -z "${TMUX}"; then
+    # '-A' makes new-session behave like attach-session if 'main' already exists, otherwise it creates the 'main' session
+    tmux new-session -A -s main
+  fi
 fi
+
