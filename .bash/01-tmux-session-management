@@ -5,6 +5,6 @@ if command -v tmux > /dev/null 2>&1; then
   # verify we are not nesting tmux
   if test -z "${TMUX:-}"; then
     # '-A' makes new-session behave like attach-session if 'main' already exists, otherwise it creates the 'main' session
-    tmux new-session -A -s main
+    tmux new-session -A -s 0
   fi
 fi
