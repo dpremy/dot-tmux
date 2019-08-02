@@ -87,9 +87,9 @@
 | Spacebar                | Start selection |
 | Esc                     | Clear selection |
 | Enter                   | Copy selection |
-| ` b                     | List all buffers |
-| ` B                     | Show all buffers and paste selected |
-| ` P                     | Paste contents of buffer\_0 |
+| ` B                     | List all buffers |
+| ` b                     | Show all buffers and paste selected |
+| ` p                     | Paste contents of buffer\_0 |
 | :show-buffer            | Display buffer\_0 |
 | :capture-pane           | Copy entire visible contents of pane to buffer |
 | :save-buffer _file.txt_ | Save buffer contents to _file.txt_ |
