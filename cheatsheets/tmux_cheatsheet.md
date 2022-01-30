@@ -1,4 +1,8 @@
-| Session Management         |  |
+# tmux cheatsheet
+
+## Session Management
+
+| Key                        | Comment  |
 | ---                        | --- |
 | tmux attach                | Attach to last session |
 | tmux attach -t _name_      | Attach to session _name_ |
@@ -14,7 +18,9 @@
 | ` (                        | Switch client toprevious session |
 | ` )                        | Switch client tonext session |
 
-| Window Management |  |
+## Window Management
+
+| Key               | Comment  |
 | ---               | --- |
 | ` c               | Create new window |
 | ` r               | Rename current window |
@@ -28,7 +34,8 @@
 | ` 0...9           | Switch/select window by number |
 | ` <>              | Move current window to the left or right by one |
 
-| Pane Management |  |
+## Pane Management
+| Key             | Comment  |
 | ---             | --- |
 | ` |             | Split pane vertically |
 | ` -             | Split pane horizontally |
@@ -52,7 +59,9 @@
 | ` Alt + ↑↓      | Resize current pane by 5 height |
 | ` Alt + ←→      | Resize current pane by 5 width |
 
-| Misc.           |  |
+## Misc.
+
+| Key             | Comment  |
 | ---             | --- |
 | ` :             | Enter command mode |
 | ` t             | Display a clock |
@@ -60,33 +69,32 @@
 | :setw -g OPTION | Set OPTION for all windows |
 | :set -g OPTION  | Set OPTION for all sessions |
 
-| Help  |  |
+## Help
+
+| Key   | Comment  |
 | ---   | --- |
 | :info | Show every session, window, pane, etc. |
 | ` ?   | Show keyboard shortcuts |
 
-| Copy Mode               |  |
+## Copy Mode
+
+| Key                     | Comment  |
 | ---                     | --- |
-| ` [                     | Enter copy mode |
+| ` Esc                   | Enter copy mode |
 | ` PgUp                  | Enter copy mode and scroll up one page |
 | q                       | Quit mode |
 | g                       | Go to top line |
 | G                       | Go to bottom line |
 | ↑                       | Scroll up |
 | ↓                       | Scroll down |
-| h                       | Move cursor left |
-| j                       | Move cursor down |
-| k                       | Move cursor up |
-| l                       | Move cursor right |
-| w                       | Move cursor forward one word |
-| b                       | Move cursor backward one word |
 | /                       | Search forward |
 | ?                       | Search backward |
 | n                       | Next keyword occurrence |
 | N                       | Previous keyword occurrence |
-| Spacebar                | Start selection |
+| v                       | Start selection |
+| V                       | Start line selection |
 | Esc                     | Clear selection |
-| Enter                   | Copy selection |
+| y                       | Copy selection |
 | ` B                     | List all buffers |
 | ` b                     | Show all buffers and paste selected |
 | ` p                     | Paste contents of buffer\_0 |
@@ -94,3 +102,9 @@
 | :capture-pane           | Copy entire visible contents of pane to buffer |
 | :save-buffer _file.txt_ | Save buffer contents to _file.txt_ |
 | :delete-buffer -b 0…9   | Delete buffer by number |
+
+## Version
+
+1/29/2022
+
+To be used in conjunction with dpremy’s tmux dotfiles - https://gitlab.com/dpremy/dot-tmux/
