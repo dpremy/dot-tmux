@@ -1,0 +1,19 @@
+---
+kind: pipeline
+type: docker
+name: dot-tmux
+
+platform:
+  os: linux
+  arch: amd64
+
+steps:
+- name: shellcheck-ksh
+  image: koalaman/shellcheck-alpine:stable
+  commands:
+  - shellcheck --shell ksh -S warning .ksh/*
+
+- name: shellcheck-bash
+  image: koalaman/shellcheck-alpine:stable
+  commands:
+  - shellcheck --shell bash -S warning .bash/*
