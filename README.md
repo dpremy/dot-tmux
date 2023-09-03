@@ -1,5 +1,7 @@
 # dpremy tmux config, shell aliases, and cheat sheets
 
+![Build Status](https://ci.davidremy.me/api/badges/dpremy/dot-tmux/status.svg)
+
 ## Purpose
 
 This repository contains the dotfiles and configs I use with tmux. It is desinged to work with [dotfiler](https://github.com/svetlyak40wt/dotfiler), but can easily be used without it.
