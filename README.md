@@ -20,4 +20,4 @@ stow -d ~/.files/ -t ~/ -S dot-tmux
 
 ## Usage
 
-See [tmux_cheatsheet.pdf](./cheatsheets/tmux_cheatsheet.pdf) or [tmux_cheatsheet.md](./cheatsheets/tmux_cheatsheet.md) for some of the most common key bindings. [.tmux.conf](.tmux.conf) also has comments and may be worth reviewing.
+See [tmux_cheatsheet.pdf](./cheatsheets/tmux_cheatsheet.pdf) or [tmux_cheatsheet.md](./cheatsheets/tmux_cheatsheet.md) for some of the most common key bindings. [tmux.conf](.config/tmux/tmux.conf) also has comments and may be worth reviewing.

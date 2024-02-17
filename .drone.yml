@@ -24,4 +24,4 @@ steps:
   # Reversing the grep error code is required as grep returns 0 when text is found, and using -v inverts the whole grep output, not the return code.
   commands:
   - apk add tmux
-  - if exit | tmux -f .tmux.conf -C | grep "%config-error"; then return 1; else return 0; fi
+  - if exit | tmux -f .config/tmux/tmux.conf -C | grep "%config-error"; then return 1; else return 0; fi
